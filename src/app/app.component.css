@@ -14,10 +14,12 @@
   z-index: 10;
   min-height: 100vh;
   box-shadow: 2px 0 6px rgba(0,21,41,.35);
+  background: #fff;
 }
 
 .header-trigger {
-  height: 64px;
+  box-align: end;
+  height: auto;
   padding: 20px 24px;
   font-size: 20px;
   cursor: pointer;
@@ -34,7 +36,7 @@
   padding-left: 24px;
   overflow: hidden;
   line-height: 64px;
-  background: #001529;
+  background: rgba(1, 111, 51);
   transition: all .3s;
 }
 
@@ -65,7 +67,8 @@ nz-header {
   position: relative;
   height: 64px;
   padding: 0;
-  background: #fff;
+  z-index: 1;
+  background: rgba(1, 111, 51);
   box-shadow: 0 1px 4px rgba(0,21,41,.08);
 }
 
