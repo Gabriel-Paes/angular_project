@@ -9,16 +9,45 @@
   height: 100vh;
 }
 
-.navbar{
-  width: 100vh;
+nz-header {
+  padding: 0;
+  margin: 0;
   height: 50px;
+}
+
+.navbar{
+  width: auto;
+  height: 100%;
   background: rgba(1, 111, 51);
+}
+
+.navbar-logo{
+  position: relative;
+  height: 64px;
+  padding-left: 24px;
+  overflow: hidden;
+  line-height: 64px;
+  transition: all .3s;
+}
+
+.navbar-logo img {
+  display: inline-block;
+  height: 55%;
+  vertical-align: middle;
+}
+
+.app-header {
+  position: relative;
+  height: 50px;
+  padding: 0;
+  z-index: 1;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0,21,41,.08);
 }
 
 .menu-sidebar {
   position: relative;
   z-index: 10;
-  
   box-shadow: 2px 0 6px rgba(0,21,41,.35);
   background: #fff;
 }
@@ -63,23 +92,9 @@
   vertical-align: middle;
 }
 
-nz-header {
-  padding: 0;
-  width: 100%;
-  z-index: 2;
-}
-
-.app-header {
-  position: relative;
-  height: 64px;
-  padding: 0;
-  z-index: 1;
-  background: #fff;
-  box-shadow: 0 1px 4px rgba(0,21,41,.08);
-}
 
 nz-content {
-  margin: 24px;
+  margin: 70px 20px 20px;
 }
 
 .inner-content {
