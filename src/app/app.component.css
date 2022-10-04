@@ -14,33 +14,13 @@ nz-header {
   margin: 0;
   height: 50px;
   background: rgba(1, 111, 51);
-  position: relative;
+  display: flex;
 }
 
-.logo{
+.logo {
+  display: flex;
   width: 256px;
-  height: 100%;
-  float: left;
-  position: absolute;
-}
-
-.logo img{
-
-  height: 100%;
-}
-
-/* .logo{
-  position: relative;
-  height: 64px;
-  padding-left: 24px;
-  overflow: hidden;
-  line-height: 64px;
-  transition: all .3s;
-  float: left;
-} */
-
-.navbar{
-  width: 50%;
+  padding: 4px;
 }
 
 .app-header {

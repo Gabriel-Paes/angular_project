@@ -1,18 +1,22 @@
-
-    <nz-table [nzData]="drivers" [nzFrontPagination]="false" [nzShowPagination]="false">
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Age</th>
-          <th>Address</th>
-        </tr>
-      </thead>
-      <tbody cdkDropList > <!--(cdkDropListDropped)="drop($event)"-->
-        <tr *ngFor="let driver of drivers" cdkDrag>
-          <td>{{ driver._id }}</td>
-          <td>{{ driver.name }}</td>
-          <td>{{ driver.category }}</td>
-        </tr>
-      </tbody>
-    </nz-table>
-  
+<nz-table [nzData]="drivers" [nzFrontPagination]="false" [nzShowPagination]="false">
+  <thead>
+    <tr>
+      <th>DriverId</th>
+      <th>Url</th>
+      <th>GivenName</th>
+      <th>FamiliyName</th>
+      <th>DateOfBirth</th>
+      <th>Nationality</th>
+    </tr>
+  </thead>
+  <tbody cdkDropList> <!-- (cdkDropListDropped)="drop($event)" -->
+<tr *ngFor="let driver of drivers" cdkDrag>
+      <td>{{ driver.driverId }}</td>
+      <td>{{ driver.url }}</td>
+      <td>{{ driver.givenName }}</td>
+      <td>{{ driver.familiyName }}</td>
+      <td>{{ driver.dateOfBirth }}</td>
+      <td>{{ driver.nationality }}</td>
+    </tr>
+  </tbody>
+</nz-table>

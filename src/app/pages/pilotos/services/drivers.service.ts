@@ -13,6 +13,6 @@ export class DriversService {
   constructor(private httpClient: HttpClient) { }
 
   list() {
-    return this.httpClient.get<Drivers[]>('this.API');
+    return this.httpClient.get<Drivers[]>(this.API);
   }
 }

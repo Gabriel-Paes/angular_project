@@ -12,15 +12,19 @@ import { Drivers } from './../model/drivers';
 })
 export class TableComponent implements OnInit{
   
-  drivers: Observable<Drivers[]>;
+  //drivers: Observable<Drivers[]>;
+  drivers: Drivers[] =[];
+
 
   constructor(private driversService: DriversService) {
-    this.drivers = this.driversService.list();
+    //this.drivers = this.driversService.list();
+
+    this.driversService.list().subscribe(drivers => this.drivers = drivers)
   }
   
-/*   drop(event: CdkDragDrop<string[]>) {
+  drop(event: CdkDragDrop<string[]>) {
     moveItemInArray(this.drivers, event.previousIndex, event.currentIndex);
-  } */
+  }
 
   ngOnInit(): void {
     

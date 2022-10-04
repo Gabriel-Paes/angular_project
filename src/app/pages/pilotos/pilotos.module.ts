@@ -8,9 +8,6 @@ import { PilotosRoutingModule } from './pilotos-routing.module';
 import { PilotosComponent } from './pilotos.component';
 import { TableComponent } from './table/table.component';
 
-
-
-
 @NgModule({
   declarations: [
     PilotosComponent,
@@ -21,7 +18,7 @@ import { TableComponent } from './table/table.component';
     PilotosRoutingModule,
     NzTableModule,
     NzDividerModule,
-    NzListModule
+    NzListModule,
   ]
 })
 export class PilotosModule { }

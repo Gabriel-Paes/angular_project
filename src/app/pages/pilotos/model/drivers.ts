@@ -1,5 +1,8 @@
 export interface Drivers {
-    _id: string;
-    name: string;
-    category: string;
+    driverId: string;
+    url: string;
+    givenName: string;
+    familiyName: string;
+    dateOfBirth: Date;
+    nationality: string;
 }
