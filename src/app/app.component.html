@@ -1,22 +1,16 @@
 <nz-layout class="app-layout">
   <nz-header>
+    <div class="navbar">
       <div class="logo">
         <img src="https://ri.rd.com.br/assets/images/logo-min.png" alt="Logo">
+        <a style="position: absolute; width: 156px; height: 40px;" routerLink="/home"></a>
       </div>
-      <a routerLink="/home"></a>
-      <div class="navbar">
-        Test
-      </div>
-      <div class="app-header"></div>
+       <h2 style="color: #FFF">Business Intelligence</h2>
+    </div>
+      <div class="app-header">Ferramentas</div>
     </nz-header>
   <nz-layout>
     <nz-sider class="menu-sidebar" nzCollapsible nzWidth="256px" nzBreakpoint="md" [(nzCollapsed)]="isCollapsed" [nzTrigger]="null">
-      <div class="sidebar-logo">
-        <a href="https://ng.ant.design/" target="_blank">
-          <img src="https://ng.ant.design/assets/img/logo.svg" alt="logo">
-          <h1>Ant Design Of Angular</h1>
-        </a>
-      </div>
       <span class="header-trigger" (click)="isCollapsed = !isCollapsed">
         <i class="trigger" nz-icon nzType="swap"></i>
       </span>
@@ -30,6 +24,12 @@
           <span><a routerLink="/pilotos">Pilotos</a></span>
         </li>
       </ul>
+      <div class="sidebar-logo">
+        <a href="https://ng.ant.design/" target="_blank">
+          <img src="https://ng.ant.design/assets/img/logo.svg" alt="logo">
+          <h1>Ant Design Of Angular</h1>
+        </a>
+      </div>
     </nz-sider>
     <nz-content>
       <div class="inner-content">

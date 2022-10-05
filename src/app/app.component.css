@@ -14,13 +14,18 @@ nz-header {
   margin: 0;
   height: 50px;
   background: rgba(1, 111, 51);
+}
+
+.navbar{
   display: flex;
+  height: 100%;
 }
 
 .logo {
   display: flex;
   width: 256px;
-  padding: 4px;
+  padding: 8px;
+  justify-content: center;
 }
 
 .app-header {
@@ -40,9 +45,9 @@ nz-header {
 }
 
 .header-trigger {
-  box-align: end;
-  height: auto;
-  padding: 20px 24px;
+  display: block;
+  float: right;
+  padding: 0 5px;
   font-size: 20px;
   cursor: pointer;
   transition: all .3s,padding 0s;
@@ -72,7 +77,7 @@ nz-header {
 .sidebar-logo h1 {
   display: inline-block;
   margin: 0 0 0 20px;
-  color: #fff;
+  color: #000;
   font-weight: 600;
   font-size: 14px;
   font-family: Avenir,Helvetica Neue,Arial,Helvetica,sans-serif;
