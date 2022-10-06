@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { NzDividerModule } from 'ng-zorro-antd/divider';
 import { NzDropDownModule } from 'ng-zorro-antd/dropdown';
+import { NzIconModule } from 'ng-zorro-antd/icon';
 import { NzListModule } from 'ng-zorro-antd/list';
 import { NzTableModule } from 'ng-zorro-antd/table';
 
@@ -22,7 +23,8 @@ import { TableComponent } from './table/table.component';
     NzTableModule,
     NzDividerModule,
     NzListModule,
-    NzDropDownModule
+    NzDropDownModule,
+    NzIconModule
   ]
 })
 export class PilotosModule { }
