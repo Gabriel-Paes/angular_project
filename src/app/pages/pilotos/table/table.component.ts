@@ -13,7 +13,7 @@ import { Drivers } from './../model/drivers';
 export class TableComponent implements OnInit{
   
   //drivers: Observable<Drivers[]>;
-  drivers: Drivers[] =[];
+  drivers: Drivers[] = [];
 
 
   constructor(private driversService: DriversService) {

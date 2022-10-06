@@ -2,7 +2,7 @@ export interface Drivers {
     driverId: string;
     url: string;
     givenName: string;
-    familiyName: string;
-    dateOfBirth: Date;
+    familyName: string;
+    dateOfBirth: string;
     nationality: string;
 }

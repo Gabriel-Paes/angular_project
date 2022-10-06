@@ -8,7 +8,8 @@ import { Drivers } from './../model/drivers';
 })
 export class DriversService {
 
-  private readonly API = 'http://ergast.com/api/f1/drivers.json';
+  //private readonly API = 'http://ergast.com/api/f1/drivers.json';
+  private readonly API = '/assets/db.json';
 
   constructor(private httpClient: HttpClient) { }
 

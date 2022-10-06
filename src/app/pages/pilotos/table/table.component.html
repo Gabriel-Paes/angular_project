@@ -4,19 +4,21 @@
       <th>DriverId</th>
       <th>Url</th>
       <th>GivenName</th>
-      <th>FamiliyName</th>
+      <th>familyName</th>
       <th>DateOfBirth</th>
       <th>Nationality</th>
+      <th>Mais</th>
     </tr>
   </thead>
-  <tbody cdkDropList> <!-- (cdkDropListDropped)="drop($event)" -->
+  <tbody cdkDropList > <!-- (cdkDropListDropped)="drop($event)" -->
 <tr *ngFor="let driver of drivers" cdkDrag>
       <td>{{ driver.driverId }}</td>
-      <td>{{ driver.url }}</td>
+      <td><a>{{ driver.url }}</a></td>
       <td>{{ driver.givenName }}</td>
-      <td>{{ driver.familiyName }}</td>
+      <td>{{ driver.familyName }}</td>
       <td>{{ driver.dateOfBirth }}</td>
       <td>{{ driver.nationality }}</td>
+      <td></td>
     </tr>
   </tbody>
 </nz-table>
