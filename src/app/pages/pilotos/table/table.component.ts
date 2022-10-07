@@ -1,6 +1,6 @@
 import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
+//import { Observable } from 'rxjs';
 
 import { DriversService } from '../services/drivers.service';
 import { Drivers } from './../model/drivers';
@@ -19,7 +19,7 @@ export class TableComponent implements OnInit{
   constructor(private driversService: DriversService) {
     //this.drivers = this.driversService.list();
 
-    this.driversService.list().subscribe(drivers => this.drivers = drivers)
+    this.driversService.list().subscribe((_drivers: any) => this.drivers = _drivers.MRData.DriverTable.Drivers)
   }
   
   drop(event: CdkDragDrop<string[]>) {
