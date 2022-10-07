@@ -1,24 +1,26 @@
 <nz-table [nzData]="drivers" [nzFrontPagination]="false" [nzShowPagination]="false">
   <thead>
     <tr>
+      <th><span nz-icon nzType="drag" nzTheme="outline"></span></th>
+      <th>Ações</th>
       <th>DriverId</th>
       <th>Url</th>
       <th>GivenName</th>
       <th>familyName</th>
       <th>DateOfBirth</th>
       <th>Nationality</th>
-      <th>Mais</th>
     </tr>
   </thead>
   <tbody cdkDropList > <!-- (cdkDropListDropped)="drop($event)" -->
 <tr *ngFor="let driver of drivers" cdkDrag>
+      <td><span nz-icon nzType="drag" nzTheme="outline"></span></td>
+      <td><app-dropdown></app-dropdown></td>
       <td>{{ driver.driverId }}</td>
       <td><a>{{ driver.url }}</a></td>
       <td>{{ driver.givenName }}</td>
       <td>{{ driver.familyName }}</td>
       <td>{{ driver.dateOfBirth }}</td>
       <td>{{ driver.nationality }}</td>
-      <td></td>
     </tr>
   </tbody>
 </nz-table>

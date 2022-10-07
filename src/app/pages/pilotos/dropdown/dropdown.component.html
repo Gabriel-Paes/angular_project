@@ -1,0 +1,10 @@
+<a nz-dropdown nzTrigger="click" [nzDropdownMenu]="menu">
+  <span nz-icon nzType="more" nzTheme="outline"></span>
+</a>
+<nz-dropdown-menu #menu="nzDropdownMenu">
+  <ul nz-menu>
+    <li nz-menu-item>Editar</li>
+    <li nz-menu-item>Deletar<span nz-icon nzType="delete" nzTheme="outline"></span></li>
+    <li nz-menu-item>Copiar</li>
+  </ul>
+</nz-dropdown-menu>
